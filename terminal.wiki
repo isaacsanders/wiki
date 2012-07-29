@@ -1,0 +1,3 @@
+= Terminal Tips =
+
+Command-Up and Command-Down scroll

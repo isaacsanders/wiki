@@ -1,3 +1,5 @@
 = Isaac Sanders' Wiki =
 
 This is my personal vim wiki.
+
+Tips for the [[terminal]].
