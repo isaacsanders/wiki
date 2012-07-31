@@ -1,0 +1,14 @@
+#Epigrams in Programming
+
+This is a list of my favorite epigrams from this site:
+http://www.cs.yale.edu/quotes.html
+
+Symmetry is a complexity-reducing concept (co-routines include subroutines);
+seek it everywhere
+
+It is easier to write an incorrect program than understand a correct one.
+
+Everything should be built top-down, except the first time.
+
+A language that doesn't affect the way you think about programming, is not worth
+knowing.
