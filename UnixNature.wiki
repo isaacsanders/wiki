@@ -1,4 +1,4 @@
-#Master Foo and the Ten Thousand Lines
+= Master Foo and the Ten Thousand Lines =
 
 Master Foo once said to a visiting programmer: “There is more Unix-nature in one line of shell script than there is in ten thousand lines of C.”
 
