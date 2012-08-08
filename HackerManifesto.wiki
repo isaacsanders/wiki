@@ -1,3 +1,4 @@
+{{{
 File: archives/7/p7_0x03_Hacker's Manifesto_by_The Mentor.txt
                                ==Phrack Inc.==
 
@@ -74,3 +75,4 @@ but you can't stop us all... after all, we're all alike.
 
                                +++The Mentor+++
 _______________________________________________________________________________
+}}}
