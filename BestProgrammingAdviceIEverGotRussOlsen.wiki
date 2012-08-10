@@ -1,0 +1,88 @@
+=The Best Programming Advice I Ever Got by Russ Olsen=
+
+Russ Olsen, author of "Eloquent Ruby" and Clojure developer, spins a tale of an
+archaic CAD program, politics, and progress that can be summed up with one
+simple mantra: "Stay the hell out of other people's code!"
+
+Name:
+Russ Olsen
+
+Programming and Job Experience:
+Everything from punch cards to ClojureScript
+
+Most Notable Achievement:
+Author, Design Patterns in Ruby, Eloquent Ruby
+
+Most frequently used programming language:
+Ruby, with Clojure a close second.
+
+Advice:
+The best programming advice I ever got came to me early in my career while I
+was working on a system that I simultaneously loved and hated. The cool part of
+that system was that we were doing computer aided design—think Adobe
+Illustrator, but for engineers. In those days CAD, with its interactive
+graphics, was the highest of high tech. The thing I hated was that the thing
+was slow, painfully slow: You would sit there and watch the picture appear line
+by painful line. A simple drawing would take tens of seconds, while displaying
+something complicated was an opportunity to get coffee. The performance of that
+system was horrendous even by the standards of the primitive computers we had
+back then, which is saying something. What was a hacker to do? What would *you*
+do?
+
+What I did was to dig into the code. Even though the graphics were not my
+assigned area, I spent some evenings and weekends happily hacking away, trying
+to see why things were so slow. It didn't take me long to find the problem:
+When you kicked off that system, you actually started two processes. One
+process was the CAD system proper, while the second process did all of the
+drawing. The two programs talked to each other over a socket-like network
+connection. Apparently, the programmer behind the graphics subsystem had fallen
+in love with client/server style programs and had cooked up one of his own in
+our CAD system. The rub was that since we were running on such primitive
+hardware, squeezing all of the drawing down a narrow socket was costing us an
+order of magnitude in performance, a cost that we were paying for no good
+reason.
+
+I spent the next weekend hacking together a version of the system that packaged
+everything in a single process. The difference was dramatic. Simple pictures
+now drew more or less instantaneously while more complex ones would only take
+one sip of coffee to finish. Monday morning I demoed my hacked up version over
+and over: First to my boss and then to my boss's boss and then to his boss and
+then to a whole assortment of higher ups.
+
+And then all hell broke lose. Many of those boss's boss's bosses were seriously
+pissed at me, though no one could or would articulate exactly why. Some of my
+co-workers started treating me like I had contracted an infectious disease.
+Slowly, I figured out that I had jumped into the middle of some complex
+interdepartmental power struggle. In my own clueless way I hadn't sped up the
+graphics so much as I had supplied a war winning weapon to one organizational
+faction and the other factions were not happy. Eventually, grudgingly, they did
+away with the second process along with the socket and we got our faster
+graphics. Nevertheless elation seemed thin on the ground.
+
+That was when the Biggest Boss of All asked me to stop by his office and gave
+me a key bit of advice. With the door safely closed he turned, looked me square
+in the eye and said:
+
+> "In the future, stay the Hell out of other people's code."
+
+
+Actually it was terrible advice, advice that I've gone out of my way to ignore
+it in the years since. But those words were valuable nevertheless, and I've
+gone back to them time and again.
+
+Every time some annoying new hire comes to me with a dumb idea that is
+obviously not going to work, "Stay the Hell out of other people's code," plays
+back in my head and I listen harder.
+
+Every time some other engineer has an opinion about *my* code, I remember what
+I thought of the idea that you should mind your own technical business and I
+try to disengage my ego.
+
+In later years, as I found myself building and managing software teams, I've
+realized that there were probably a dozen programmers on that ancient project
+who knew why the system was so slow and how to fix it. They knew, but they kept
+it to themselves because in that organization, there were some things that were
+more important than making the system better. "In the future, stay the hell out
+of other people's code," assumes there will be a future. But the best way to
+have a future is to be part of a team that values progress over politics, ideas
+over territory, and initiative over decorum.

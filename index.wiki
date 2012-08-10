@@ -8,4 +8,6 @@ Tips for the [[terminal]].
 
 [[UnixNature]]
 
-[[HackerManifesto]]
+[[HowToBeAHacker]]
+
+[[BestProgrammingAdviceIEverGotRussOlsen]]
