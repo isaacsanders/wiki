@@ -11,3 +11,5 @@ Tips for the [[terminal]].
 [[HowToBeAHacker]]
 
 [[BestProgrammingAdviceIEverGotRussOlsen]]
+
+[[BestProgrammingAdviceIEverGotRobPike]]
