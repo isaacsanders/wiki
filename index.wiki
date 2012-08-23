@@ -13,3 +13,5 @@ Tips for the [[terminal]].
 [[BestProgrammingAdviceIEverGotRussOlsen]]
 
 [[BestProgrammingAdviceIEverGotRobPike]]
+
+[[MichaelLeydensCurriculumNewspaper]]
