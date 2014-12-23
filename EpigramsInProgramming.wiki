@@ -1,7 +1,7 @@
 = Epigrams in Programming =
 
 This is a list of my favorite epigrams from this site:
-http://www.cs.yale.edu/quotes.html
+http://www.cs.yale.edu/homes/perlis-alan/quotes.html
 
 Symmetry is a complexity-reducing concept (co-routines include subroutines);
 seek it everywhere
